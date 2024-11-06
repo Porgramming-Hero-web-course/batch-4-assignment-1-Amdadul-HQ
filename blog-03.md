@@ -2,14 +2,10 @@
 
 TypeScript is a powerful language that builds on JavaScript by adding static types, helping you write more reliable and error-free code. One of the great features of TypeScript is **type guards**, which allow you to check and narrow down the type of a variable while coding. This makes sure you’re working with the right kind of data and avoids mistakes.
 
-Let’s break down the types of type guards you can use in TypeScript in a simple way:
-
-## 1. Type Predicates
-A **type predicate** is a function that tells TypeScript the exact type of a variable. It checks if a value is of a certain type and narrows it down for you. For example, if you have a variable that could be anything, but you want to make sure it's a string, you can use a type predicate to check that.
-
-Here’s an example:
 
 ```typescript
+## 1. Type Predicates
+A **type predicate** is a function that tells TypeScript the exact type of a variable. It checks if a value is of a certain type and narrows it down for you. For example, if you have a variable that could be anything, but you want to make sure it's a string, you can use a type predicate to check that.
 function isString(value: any): value is string {
   return typeof value === 'string';
 }
