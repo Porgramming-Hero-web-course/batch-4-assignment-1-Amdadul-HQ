@@ -101,6 +101,5 @@ processValue(new Date());
 processValue(42); 
 ```
 
-In this example, the function processValue checks if value is a string or a Date object and handles each case accordingly. If it's neither, it simply logs the type of the value.
 
 
